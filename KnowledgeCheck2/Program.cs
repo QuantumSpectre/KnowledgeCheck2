@@ -8,7 +8,7 @@ namespace KnowledgeCheck2
         {
             
 
-            Console.WriteLine("How many characters do you want to add? ");
+            Console.WriteLine("How many characters do you want to add today? ");
             var numberOfRecords = int.Parse(Console.ReadLine());
 
             var recordList = new List<FantasyCharacter>();
@@ -41,7 +41,7 @@ namespace KnowledgeCheck2
 
             foreach (FantasyCharacter x in recordList)
             {
-                Console.WriteLine(x.Name + "\n");
+                Console.WriteLine(x.ToString());
             }
 
         }
